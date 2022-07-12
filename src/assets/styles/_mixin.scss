@@ -1,0 +1,82 @@
+@import "../../assets/styles/variables";
+
+@mixin icon-style() {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+//font-size
+@mixin font-size($font-size) {
+  @each $size in $font-size {
+    .font-size-#{$size}{
+      font-size: #{$size}px;
+    }
+    //icon-size
+    .i-s-#{$size}{
+      font-size: #{$size}px;
+      height: #{$size}px;
+      width: #{$size}px;
+    }
+  }
+}
+
+//colors
+@mixin colors($colors) {
+  @each $color in $colors {
+    .font-color-#{$color}{
+      color: #{$color};
+    }
+    .bg-#{$color}{
+      background-color: #{$color};
+    }
+  }
+}
+
+//margin
+@mixin margins($margins) {
+  @each $margin in $margins {
+    .m-#{$margin} {
+      margin: #{$margin}px;
+    }
+    .mt-#{$margin} {
+      margin-top: #{$margin}px;
+    }
+    .mr-#{$margin} {
+      margin-right: #{$margin}px;
+    }
+    .mb-#{$margin} {
+      margin-bottom: #{$margin}px;
+    }
+    ml-#{$margin} {
+      margin-left: #{$margin}px;
+    }
+  }
+}
+
+//padding
+@mixin padding($paddings) {
+  @each $padding in $paddings {
+    .p-#{$padding} {
+      padding: #{$padding}px;
+    }
+    .pl-#{$padding} {
+      padding-left: #{$padding}px;
+    }
+    .pr-#{$padding} {
+      padding-right: #{$padding}px;
+    }
+    .pt-#{$padding} {
+      padding-top: #{$padding}px;
+    }
+    .pb-#{$padding} {
+      padding-bottom: #{$padding}px;
+    }
+  }
+}
+
+//@each $size in $sizes {
+//  .icon-#[$size] {
+//
+//}
+//}

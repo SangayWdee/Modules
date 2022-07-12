@@ -1,0 +1,53 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixin";
+
+.nav {
+  //width: 25%;
+  height: 100%;
+  background: $primary;
+  font-family: $font-family;
+
+  .logo-container {
+    //padding: 12px;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.16);
+
+    .logo {
+      width: 46%;
+    }
+
+    .menu-icon {
+      @include icon-style();
+      color: #DADADA;
+    }
+  }
+
+  .side-items {
+    color: #FFFFFF;
+    height: 100%;
+
+    .item-list {
+      padding: 32px 24px;
+    }
+  }
+
+  .footer {
+    color: #FFFFFF;
+    padding-left: 16px;
+    font-family: $font-family;
+  }
+
+  .copyright-text {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+
+  .developer-description {
+    font-size: 10px;
+    letter-spacing: 0.4px;
+
+    .underline {
+      text-decoration: underline;
+    }
+  }
+}

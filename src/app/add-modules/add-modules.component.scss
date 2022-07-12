@@ -1,0 +1,48 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixin";
+
+.add-module-container {
+  margin: 0 auto;
+  width: 96%;
+  background-color: yellow;
+  font-family: $font-family;
+
+  .crud-on-module {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 24px;
+
+    .module-text {
+      font-weight: 400;
+      font-size: 26px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    .module-hint {
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.15px;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .module-text-container {
+      background-color: bisque;
+    }
+    .add-module-btn {
+      background-color: bisque;
+      height: 60px;
+      position: relative;
+
+      .add-icon {
+        position: absolute;
+
+      }
+      .add-btn {
+        padding: 12px 16px 12px 48px;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1.25px;
+      }
+    }
+  }
+}

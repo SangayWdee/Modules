@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/assets/styles/mixin";
+
+@include padding($paddings);
+@include margins($margins);
+@include colors($colors);
+@include font-size($font-size);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

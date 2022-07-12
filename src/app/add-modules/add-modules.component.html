@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutGap="24px" class="add-module-container">
+  <div fxLayout="row" fxLayoutAlign="space-between center" class="crud-on-module">
+    <div class="module-text-container">
+      <p class="module-text">Modules</p>
+      <p class="module-hint">Select a module to edit, view, duplicate, change category or delete.</p>
+    </div>
+    <div fxLayoutAlign="flex-end flex-end" class="add-module-btn">
+      <mat-icon class="add-icon">add</mat-icon>
+      <button class="add-btn" mat-button (click)="openDialog()">ADD MODULES</button>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between center" class="search-module">
+    <mat-icon class="search-icon">search</mat-icon>
+    <input type="text" placeholder="Search Modules">
+    <div fxLayout="row" class="search-right-icons">
+      <mat-icon class="view-module">view_module</mat-icon>
+      <mat-icon class="menu">menu</mat-icon>
+    </div>
+  </div>
+</div>
+
