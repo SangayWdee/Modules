@@ -20,10 +20,21 @@
       background-color: #FFFFFF;
     }
     .user {
+      position: relative;
       width: 167px;
       border-radius: 4px;
       padding: 4px 12px;
       border: 1px solid rgba(0, 0, 0, 0.38);
+
+      .indicator {
+        position: absolute;
+        left: 36px;
+        top: 24px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 1px solid $white-color;
+      }
       .profile {
         width: 32px;
         height: 32px;

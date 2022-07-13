@@ -1,0 +1,31 @@
+@import "../../assets/styles/variables";
+
+.module-table {
+  margin: 0 auto;
+  width: 96%;
+  box-shadow: none;
+  font-family: $font-family;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+
+  .t-header {
+    font-weight: 400;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.16);
+  }
+  .t-row {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.02);
+    vertical-align: center;
+  }
+  .table-img {
+    width: 50px;
+  }
+
+  .status {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    font-weight: 400;
+  }
+}

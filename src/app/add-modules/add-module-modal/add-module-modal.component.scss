@@ -1,0 +1,21 @@
+@import "/src/assets/styles/variables";
+@import "/src/assets/styles/mixin";
+
+.add-module-dialog {
+  font-family: $font-family;
+  border-radius: 4px 4px 0px 0px;
+  border-top: 4px solid $primary;
+
+  .module-input {
+    border: none;
+    outline: none;
+  }
+
+  .close-btn {
+    border-radius: 4px;
+    border: 1px solid $primary;
+  }
+  .add-btn {
+    border-radius: 4px;
+  }
+}

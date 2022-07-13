@@ -4,20 +4,22 @@
 .add-module-container {
   margin: 0 auto;
   width: 96%;
-  background-color: yellow;
   font-family: $font-family;
 
   .crud-on-module {
     width: 100%;
-    background-color: #FFFFFF;
     border-radius: 4px;
-    padding: 24px;
+
+    .module-text-container{
+      border-radius: 4px;
+    }
 
     .module-text {
       font-weight: 400;
       font-size: 26px;
       color: rgba(0, 0, 0, 0.87);
     }
+
     .module-hint {
       font-weight: 400;
       font-size: 16px;
@@ -25,24 +27,53 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
-    .module-text-container {
-      background-color: bisque;
-    }
     .add-module-btn {
-      background-color: bisque;
-      height: 60px;
+      height: 40px;
       position: relative;
+      color: #FFFFFF;
 
       .add-icon {
         position: absolute;
+        left: 14px;
+        top: 10px;
+        z-index: 100;
+        cursor: pointer;
+        @include icon-style();
+      }
 
-      }
       .add-btn {
-        padding: 12px 16px 12px 48px;
+        padding: 0px 16px 0px 48px;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 1.25px;
+        background-color: $primary;
       }
+    }
+  }
+
+  //search
+  .search-module {
+    position: relative;
+
+    .search-icon {
+      position: absolute;
+      left: 12px;
+    }
+
+    .search-bar {
+      outline: none;
+      border: none;
+    }
+
+    .view-module {
+      border: 0.5px solid rgba(0, 0, 0, 0.6);
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    .menu {
+      border: 0.5px solid rgba(0, 0, 0, 0.6);
+      border-radius: 0px 4px 4px 0px;
     }
   }
 }

@@ -10,7 +10,7 @@
 @mixin font-size($font-size) {
   @each $size in $font-size {
     .font-size-#{$size}{
-      font-size: #{$size}px;
+      font-size: #{$size}px !important;
     }
     //icon-size
     .i-s-#{$size}{
@@ -22,13 +22,25 @@
 }
 
 //colors
-@mixin colors($colors) {
+@mixin try-colors( ) {
+  $colors: (hint-color, sh-hint, white-color, light-black, yellow-color, light-color, primary-color);
+  $assign-colors: (
+    'hint-color': $black-color-6,
+    'sh-hint': $black-color-38,
+    'white-color': $white-color,
+    'light-black': $black-color-87,
+    'yellow-color': $yellow,
+    'light-color': $light-background,
+    'primary-color': $primary
+  );
+
   @each $color in $colors {
-    .font-color-#{$color}{
-      color: #{$color};
+    $mapped-color: map-get($assign-colors, $color);
+    .text-#{$color} {
+      color: $mapped-color;
     }
     .bg-#{$color}{
-      background-color: #{$color};
+      background-color: $mapped-color;
     }
   }
 }
@@ -37,7 +49,7 @@
 @mixin margins($margins) {
   @each $margin in $margins {
     .m-#{$margin} {
-      margin: #{$margin}px;
+      margin: #{$margin}px !important;
     }
     .mt-#{$margin} {
       margin-top: #{$margin}px;
@@ -60,6 +72,9 @@
     .p-#{$padding} {
       padding: #{$padding}px;
     }
+    .p-s-#{$padding} {
+      padding: #{$padding}px #{$padding}px;
+    }
     .pl-#{$padding} {
       padding-left: #{$padding}px;
     }
@@ -71,6 +86,14 @@
     }
     .pb-#{$padding} {
       padding-bottom: #{$padding}px;
+    }
+    .px-#{$padding} {
+      padding-left: #{$padding}px;
+      padding-right: #{$padding}px;
+    }
+    .py-#{$padding} {
+      padding-top: #{$padding}px !important;
+      padding-bottom: #{$padding}px !important;
     }
   }
 }

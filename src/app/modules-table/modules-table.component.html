@@ -1,0 +1,83 @@
+<div class="mat-elevation-z8 module-table">
+  <table mat-table [dataSource]="dataSource">
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef class="t-header font-size-16 text-light-black"> Modules Name </th>
+      <td fxLayoutAlign="start center"  class="t-row font-size-14 text-light-black py-8" mat-cell *matCellDef="let element">
+        <img class="table-img pr-16" src="assets/images/module-image.png" alt="">
+        <span> {{element.name}} </span>
+      </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef class="t-header font-size-16 text-light-black"> Category </th>
+      <td class="t-row font-size-14 text-light-black" mat-cell *matCellDef="let element"> {{element.category}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="update">
+      <th mat-header-cell *matHeaderCellDef class="t-header font-size-16 text-light-black"> Data Created </th>
+      <td class="t-row font-size-14 text-light-black" mat-cell *matCellDef="let element"> {{element.update}} <br>
+        <span class="font-size-12 text-hint-color">11:00 PM</span>
+      </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="created">
+      <th mat-header-cell *matHeaderCellDef class="t-header font-size-16 text-light-black"> Data Updated </th>
+      <td class="t-row font-size-14 text-light-black" mat-cell *matCellDef="let element"> {{element.created}} <br>
+        <span class="font-size-12 text-hint-color">11:00 PM</span>
+      </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef class="t-header font-size-16 text-light-black"> Status </th>
+      <td class="t-row font-size-14 text-light-black" mat-cell *matCellDef="let element">
+        <button mat-button class="status text-primary-color font-size-14 px-8"> {{element.status}} </button>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef class="t-header font-size-16 text-light-black">  </th>
+      <td class="t-row font-size-14 text-light-black" mat-cell *matCellDef="let element">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon class="font-size-24 text-sh-hint">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon class="text-hint-color font-size-20">edit</mat-icon>
+            <span class="text-hint-color font-size-14">Edit Module</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon class="text-hint-color font-size-20">title</mat-icon>
+            <span class="text-hint-color font-size-14">Rename Module</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon class="text-hint-color font-size-20">category</mat-icon>
+            <span class="text-hint-color font-size-14">Change Category</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon class="text-hint-color font-size-20">content_copy</mat-icon>
+            <span class="text-hint-color font-size-14">Duplicate Module</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon class="text-hint-color font-size-20">delete</mat-icon>
+            <span class="text-hint-color font-size-14">Delete Module</span>
+          </button>
+        </mat-menu>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[8]"
+                 showFirstLastButtons
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>
+

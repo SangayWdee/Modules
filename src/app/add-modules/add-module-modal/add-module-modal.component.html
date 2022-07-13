@@ -1,5 +1,13 @@
-<h1 mat-dialog-title>Dialog with elements</h1>
-<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+<div class="add-module-dialog ">
+  <p mat-dialog-title class="text-light-black">Add Module</p>
+  <p class="text-hint-color">Lorem ipsum dolor sit amet.</p>
+  <div fxLayout="column" fxLayoutAlign="flex-start" mat-dialog-actions class="module-entry">
+    <p class="module-mane text-hint-color">Module Name</p>
+    <input class="module-input p-16 pr-312 text-light-black bg-light-color" type="text" placeholder="Lorem ipsum dolor sit amet.">
+    <div fxLayout="row" fxLayoutAlign="flex-end" class="dialog-btn mt-24">
+      <button mat-button mat-dialog-close class="close-btn text-primary-color">CLOSE</button>
+      <button mat-button mat-dialog-close class="add-btn bg-primary-color text-white-color">ADD</button>
+    </div>
+  </div>
 </div>
+

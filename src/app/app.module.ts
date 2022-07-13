@@ -11,6 +11,13 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { AddModulesComponent } from './add-modules/add-modules.component';
 import { AddModuleModalComponent } from './add-modules/add-module-modal/add-module-modal.component';
 import {MatButtonModule} from "@angular/material/button";
+import { ModuleCardsComponent } from './module-cards/module-cards.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ModulesPageComponent } from './modules-page/modules-page.component';
+import { ModulesTableComponent } from './modules-table/modules-table.component';
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -18,7 +25,11 @@ import {MatButtonModule} from "@angular/material/button";
     SideNavComponent,
     ToolBarComponent,
     AddModulesComponent,
-    AddModuleModalComponent
+    AddModuleModalComponent,
+    ModuleCardsComponent,
+    LandingPageComponent,
+    ModulesPageComponent,
+    ModulesTableComponent,
   ],
     imports: [
         BrowserModule,
@@ -26,7 +37,10 @@ import {MatButtonModule} from "@angular/material/button";
         BrowserAnimationsModule,
         MaterialModule,
         FlexLayoutModule,
-        MatButtonModule
+        MatButtonModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatMenuModule
     ],
   providers: [],
   bootstrap: [AppComponent]

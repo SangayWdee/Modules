@@ -1,20 +1,20 @@
-<div fxLayout="column" fxLayoutGap="24px" class="add-module-container">
-  <div fxLayout="row" fxLayoutAlign="space-between center" class="crud-on-module">
+<div fxLayout="column" fxLayoutGap="18px" class="add-module-container">
+  <div fxLayout="row" fxLayoutAlign="space-between center" class="crud-on-module bg-white-color p-14">
     <div class="module-text-container">
-      <p class="module-text">Modules</p>
-      <p class="module-hint">Select a module to edit, view, duplicate, change category or delete.</p>
+      <p class="module-text font-size-18">Modules</p>
+      <p class="module-hint font-size-12 m-0">Select a module to edit, view, duplicate, change category or delete.</p>
     </div>
     <div fxLayoutAlign="flex-end flex-end" class="add-module-btn">
-      <mat-icon class="add-icon">add</mat-icon>
+      <mat-icon class="add-icon" (click)="openDialog()">add</mat-icon>
       <button class="add-btn" mat-button (click)="openDialog()">ADD MODULES</button>
     </div>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between center" class="search-module">
-    <mat-icon class="search-icon">search</mat-icon>
-    <input type="text" placeholder="Search Modules">
-    <div fxLayout="row" class="search-right-icons">
-      <mat-icon class="view-module">view_module</mat-icon>
-      <mat-icon class="menu">menu</mat-icon>
+    <mat-icon class="search-icon text-sh-hint i-s-24">search</mat-icon>
+    <input fxFlex="92" class="search-bar text-sh-hint bg-white p-12 pl-44" type="text" placeholder="Search Modules">
+    <div fxLayout="row" fxFlex="5.5"class="search-right-icons bg-white-color">
+      <mat-icon class="view-module text-hint-color p-4">view_module</mat-icon>
+      <mat-icon class="menu text-hint-color p-4">menu</mat-icon>
     </div>
   </div>
 </div>

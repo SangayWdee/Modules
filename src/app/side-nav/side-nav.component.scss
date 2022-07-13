@@ -2,17 +2,15 @@
 @import "../../assets/styles/mixin";
 
 .nav {
-  //width: 25%;
   height: 100%;
   background: $primary;
   font-family: $font-family;
 
   .logo-container {
-    //padding: 12px;
     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.16);
 
     .logo {
-      width: 46%;
+      width: 39%;
     }
 
     .menu-icon {
@@ -32,7 +30,6 @@
 
   .footer {
     color: #FFFFFF;
-    padding-left: 16px;
     font-family: $font-family;
   }
 
