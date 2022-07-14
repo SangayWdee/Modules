@@ -1,4 +1,4 @@
-<div class="mat-elevation-z8 module-table">
+<div class="mat-elevation-z8 module-table pt-20">
   <table mat-table [dataSource]="dataSource">
 
     <!-- Position Column -->
@@ -75,7 +75,7 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
-  <mat-paginator [pageSizeOptions]="[8]"
+  <mat-paginator class="p-4" [pageSizeOptions]="[8]"
                  showFirstLastButtons
                  aria-label="Select page of periodic elements">
   </mat-paginator>

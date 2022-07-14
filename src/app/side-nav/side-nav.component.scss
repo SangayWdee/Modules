@@ -2,7 +2,9 @@
 @import "../../assets/styles/mixin";
 
 .nav {
+  //position: fixed;
   height: 100%;
+  //width: 20%;
   background: $primary;
   font-family: $font-family;
 
@@ -25,7 +27,7 @@
     height: 100%;
 
     .item-list {
-      padding: 32px 24px;
+      //padding: 32px 24px;
     }
     .modules {
       cursor: pointer;
@@ -33,6 +35,8 @@
   }
 
   .footer {
+    //position: fixed;
+    //bottom: 0;
     color: #FFFFFF;
     font-family: $font-family;
   }

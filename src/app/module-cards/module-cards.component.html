@@ -1,5 +1,5 @@
-<div fxLayout="column" fxLayoutGap="32" class="module-card-container">
-  <div fxLayout="row" fxLayoutAlign="space-between" class="card-first-row">
+<div fxLayout="column" class="module-card-container pt-20" *ngFor="let card of [1,2]">
+  <div fxLayout="row" fxLayoutAlign="space-between" fxLayout.xs="column" class="card-first-row">
     <div fxLayout="column" fxLayoutGap="14px" class="module-card p-16 bg-white-color" *ngFor="let card of [1,2,3,4]">
       <img class="module-image" src="/assets/images/module-image.png" alt="module-image">
       <div class="module-text-container">
@@ -11,14 +11,14 @@
 
   </div>
 
-  <div fxLayout="row" fxLayoutAlign="space-between" class="card-second-row">
-    <div fxLayout="column" fxLayoutGap="14px" class="module-card p-16 bg-white-color" *ngFor="let card of [1,2,3,4]">
-      <img class="module-image" src="/assets/images/module-image.png" alt="module-image">
-      <div class="module-text-container">
-        <p class="module-name text-light-black font-size-14 m-0">Module Name</p>
-        <p class="category font-size-10 text-hint-color m-0">Category: Lorem</p>
-        <p class="details font-size-10 text-hint-color">Created on 09/11/2020 at 5:30 PM</p>
-      </div>
-    </div>
-  </div>
+<!--  <div fxLayout="row" fxLayoutAlign="space-between" class="card-second-row">-->
+<!--    <div fxLayout="column" fxLayoutGap="14px" class="module-card p-16 bg-white-color" *ngFor="let card of [1,2,3,4]">-->
+<!--      <img class="module-image" src="/assets/images/module-image.png" alt="module-image">-->
+<!--      <div class="module-text-container">-->
+<!--        <p class="module-name text-light-black font-size-14 m-0">Module Name</p>-->
+<!--        <p class="category font-size-10 text-hint-color m-0">Category: Lorem</p>-->
+<!--        <p class="details font-size-10 text-hint-color">Created on 09/11/2020 at 5:30 PM</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 </div>

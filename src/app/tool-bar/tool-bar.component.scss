@@ -2,8 +2,10 @@
 @import "../../assets/styles/mixin";
 
 .tool-bar {
-  //width: 1184px;
+  position: sticky;
+  top: 0;
   background-color: #FFFFFF;
+  z-index: 200;
 
   .tool-bar-container {
     padding: 12px 24px;

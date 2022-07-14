@@ -16,6 +16,8 @@ import { ModulesTableComponent } from './modules-table/modules-table.component';
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatMenuModule} from "@angular/material/menu";
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MediaObserver, MediaChange} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -27,17 +29,19 @@ import {MatMenuModule} from "@angular/material/menu";
     ModuleCardsComponent,
     ModulesTableComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MaterialModule,
-        FlexLayoutModule,
-        MatButtonModule,
-        MatTableModule,
-        MatPaginatorModule,
-        MatMenuModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FlexLayoutModule,
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatMenuModule,
+    MatSidenavModule,
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

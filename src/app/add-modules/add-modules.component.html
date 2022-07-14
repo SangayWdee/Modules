@@ -1,15 +1,15 @@
-<div fxLayout="column" fxLayoutGap="18px" class="add-module-container">
-  <div fxLayout="row" fxLayoutAlign="space-between center" class="crud-on-module bg-white-color p-14">
+<div fxLayout="column" fxLayoutGap="18px" class="add-module-container pt-20">
+  <div fxLayout="row" fxLayoutAlign="space-between center"  fxLayout.xs="column"  class="crud-on-module bg-white-color p-14">
     <div class="module-text-container">
       <p class="module-text font-size-18">Modules</p>
       <p class="module-hint font-size-12 m-0">Select a module to edit, view, duplicate, change category or delete.</p>
     </div>
-    <div fxLayoutAlign="flex-end flex-end" class="add-module-btn">
+    <div fxLayoutAlign="end end" class="add-module-btn">
       <mat-icon class="add-icon" (click)="openDialog()">add</mat-icon>
       <button class="add-btn" mat-button (click)="openDialog()">ADD MODULES</button>
     </div>
   </div>
-  <div fxLayout="row" fxLayoutAlign="space-between center" class="search-module">
+  <div fxLayout="row" fxLayoutAlign="space-between center"  fxLayout.xs="column"  class="search-module mb">
     <mat-icon class="search-icon text-sh-hint i-s-24">search</mat-icon>
     <input fxFlex="92" class="search-bar text-sh-hint bg-white p-12 pl-44" type="text" placeholder="Search Modules">
     <div fxLayout="row" fxFlex="5.5"class="search-right-icons bg-white-color">

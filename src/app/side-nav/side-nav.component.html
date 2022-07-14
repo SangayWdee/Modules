@@ -1,20 +1,20 @@
-<nav class="nav" fxLayout="column">
-  <div routerLink="Home" fxLayout="row" fxLayoutAlign="space-around center" class="logo-container p-10">
-    <img class="logo" src="/assets/images/logo.png" alt="logo">
-    <div class="logo"></div>
+<mat-sidenav-container class="nav">
+<mat-sidenav #sidenav class="nav" fxLayout="column">
+  <div fxLayout="row" fxLayoutAlign="space-between center" class="logo-container p-10">
+    <img routerLink="Home" class="logo" src="/assets/images/logo.png" alt="logo">
     <mat-icon class="menu-icon">menu</mat-icon>
   </div>
   <div fxLayout="column" fxLayoutAlign="space-between" class="side-items font-color-$white">
-    <div class="item-list" fxLayout="column" fxLayoutGap="32px">
-      <div class="time-table" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+    <div fxLayout="column" fxLayoutGap="" class="item-list">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="time-table mt-20 py-8 pl-24">
         <mat-icon class="table-icon item-list-icon font-size-20">web</mat-icon>
         <span class="item-text">Time Table</span>
       </div>
-      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="projects">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="projects py-8 pl-24">
         <mat-icon class="project-icon item-list-icon font-size-20">apps</mat-icon>
         <span class="item-text">Projects</span>
       </div>
-      <div routerLink="Modules" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="modules">
+      <div routerLink="Modules" routerLinkActive="bg-l-blue" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="modules py-8 pl-24">
         <mat-icon class="module-icon item-list-icon font-size-20">widgets</mat-icon>
         <span class="item-text">Modules</span>
       </div>
@@ -24,4 +24,9 @@
       <p class="developer-description">Technology and Design by <span class="underline">Selise CPQ</span></p>
     </footer>
   </div>
-</nav>
+</mat-sidenav>
+<mat-sidenav-content>
+  <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+</mat-sidenav-content>
+
+</mat-sidenav-container>

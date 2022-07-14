@@ -1,14 +1,19 @@
 .wrapper {
-  width: 100vw;
-  height: auto;
   background-color: rgb(245,245,245);
 
   .one {
-    width: 20%;
+    position: fixed;
+    width: 306px;
+    //height: 106vh;
+    height: 100%;
+    z-index: 999;
   }
 
   .right-top {
-    width: 80%;
+    //width: 80%;
+    width: 100%;
+    margin-left: 308px;
+    background-color: rgb(245,245,245);
 
     .two {
       width: 100%;
@@ -16,6 +21,10 @@
 
     .add-modules {
       margin: 0 auto;
+    }
+
+    .router-component {
+      height: auto;
     }
   }
 

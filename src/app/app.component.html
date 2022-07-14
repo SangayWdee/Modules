@@ -1,13 +1,12 @@
-<!--<app-landing-page></app-landing-page>-->
-<!--<app-modules-page></app-modules-page>-->
-<div fxLayout="row wrap" class="wrapper">
+<div fxLayout="row" class="wrapper">
   <app-side-nav class="one"></app-side-nav>
-  <div fxLayoutGap="24px" class="right-top">
+  <div class="right-top ml-308">
     <app-tool-bar class="two"></app-tool-bar>
     <app-add-modules class="add-modules"></app-add-modules>
-    <div class="rout-component">
+    <div class="rout-component pb-20">
 <!--      <app-module-cards></app-module-cards>-->
       <router-outlet></router-outlet>
     </div>
   </div>
+
 </div>

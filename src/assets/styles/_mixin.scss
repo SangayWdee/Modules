@@ -23,7 +23,7 @@
 
 //colors
 @mixin try-colors( ) {
-  $colors: (hint-color, sh-hint, white-color, light-black, yellow-color, light-color, primary-color);
+  $colors: (hint-color, sh-hint, white-color, light-black, yellow-color, light-color, primary-color, l-blue);
   $assign-colors: (
     'hint-color': $black-color-6,
     'sh-hint': $black-color-38,
@@ -31,7 +31,8 @@
     'light-black': $black-color-87,
     'yellow-color': $yellow,
     'light-color': $light-background,
-    'primary-color': $primary
+    'primary-color': $primary,
+    'l-blue': $light-blue,
   );
 
   @each $color in $colors {
@@ -52,16 +53,16 @@
       margin: #{$margin}px !important;
     }
     .mt-#{$margin} {
-      margin-top: #{$margin}px;
+      margin-top: #{$margin}px !important;
     }
     .mr-#{$margin} {
-      margin-right: #{$margin}px;
+      margin-right: #{$margin}px !important;
     }
     .mb-#{$margin} {
-      margin-bottom: #{$margin}px;
+      margin-bottom: #{$margin}px !important;
     }
     ml-#{$margin} {
-      margin-left: #{$margin}px;
+      margin-left: #{$margin}px !important;
     }
   }
 }
@@ -70,26 +71,26 @@
 @mixin padding($paddings) {
   @each $padding in $paddings {
     .p-#{$padding} {
-      padding: #{$padding}px;
+      padding: #{$padding}px !important;
     }
     .p-s-#{$padding} {
-      padding: #{$padding}px #{$padding}px;
+      padding: #{$padding}px #{$padding}px !important;
     }
     .pl-#{$padding} {
-      padding-left: #{$padding}px;
+      padding-left: #{$padding}px !important;
     }
     .pr-#{$padding} {
-      padding-right: #{$padding}px;
+      padding-right: #{$padding}px !important;
     }
     .pt-#{$padding} {
-      padding-top: #{$padding}px;
+      padding-top: #{$padding}px !important;
     }
     .pb-#{$padding} {
-      padding-bottom: #{$padding}px;
+      padding-bottom: #{$padding}px !important;
     }
     .px-#{$padding} {
-      padding-left: #{$padding}px;
-      padding-right: #{$padding}px;
+      padding-left: #{$padding}px !important;
+      padding-right: #{$padding}px !important;
     }
     .py-#{$padding} {
       padding-top: #{$padding}px !important;
