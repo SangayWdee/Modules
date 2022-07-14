@@ -8,6 +8,7 @@
 
   .logo-container {
     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 
     .logo {
       width: 39%;
@@ -25,6 +26,9 @@
 
     .item-list {
       padding: 32px 24px;
+    }
+    .modules {
+      cursor: pointer;
     }
   }
 
