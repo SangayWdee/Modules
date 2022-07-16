@@ -6,20 +6,20 @@
 }
 
 
-.add-module-dialog {
+.add-dialog {
   font-family: $font-family;
   border-radius: 4px 4px 0px 0px;
 
-  .module-input {
+  .add-dialog__content-input {
     border: none;
     outline: none;
   }
 
-  .close-btn {
+  .add-dialog__close-btn {
     border-radius: 4px;
     border: 1px solid $primary;
   }
-  .add-btn {
+  .add-dialog__add-btn {
     border-radius: 4px;
   }
 }

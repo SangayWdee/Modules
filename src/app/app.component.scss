@@ -1,31 +1,14 @@
 .wrapper {
-  background-color: rgb(245,245,245);
 
-  .one {
+  .wrapper__side-nav {
     position: fixed;
     width: 306px;
-    //height: 106vh;
     height: 100%;
     z-index: 999;
   }
 
-  .right-top {
-    //width: 80%;
+  .wrapper__right-content {
     width: 100%;
-    margin-left: 308px;
-    background-color: rgb(245,245,245);
-
-    .two {
-      width: 100%;
-    }
-
-    .add-modules {
-      margin: 0 auto;
-    }
-
-    .router-component {
-      height: auto;
-    }
   }
 
 }

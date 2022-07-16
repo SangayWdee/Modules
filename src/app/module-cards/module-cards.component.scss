@@ -1,17 +1,12 @@
 @import "../../assets/styles/variables";
 @import "../../assets/styles/mixin";
 
-.module-card-container {
+.card-container {
   margin: 0 auto;
   width: 96%;
   font-family: $font-family;
 
-  .module-card {
+  .card-container__module {
     border-radius: 4px;
-    .module-image {
-      margin: 0 auto;
-      //width: 100%;
-      //height: auto;
-    }
   }
 }

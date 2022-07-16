@@ -7,28 +7,28 @@
   background-color: #FFFFFF;
   z-index: 200;
 
-  .tool-bar-container {
-    padding: 12px 24px;
+  .tool-bar__container {
 
-    .title {
+    .tool-ber__title {
       margin: 0;
       font-weight: 400;
-      font-size: 16px;
       letter-spacing: 0.15px;
     }
 
-    .right-compo {
+    .tool-bar__right-compo {
       width: 22%;
-      background-color: #FFFFFF;
+
+      @media only screen and (max-width: 960px){
+        width: 100%;
+      }
     }
-    .user {
+    .tool-bar__user {
       position: relative;
       width: 167px;
       border-radius: 4px;
-      padding: 4px 12px;
-      border: 1px solid rgba(0, 0, 0, 0.38);
+      border: 1px solid rgba($black-color, 0.38);
 
-      .indicator {
+      .tool-bar__indicator {
         position: absolute;
         left: 36px;
         top: 24px;
@@ -37,49 +37,38 @@
         border-radius: 50%;
         border: 1px solid $white-color;
       }
-      .profile {
+      .tool-bar__profile-pic {
         width: 32px;
         height: 32px;
-        margin-right: 8px;
       }
-      .user-name {
+
+      .tool-bar__user-name {
         margin: 0;
-        font-size: 12px;
         font-family: $font-family;
         height: 14px;
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba($black-color, 0.6);
         font-weight: 600;
       }
 
-      .user-role {
+      .tool-bar__user-role {
         margin: 0;
-        font-size: 10px;
         font-family: $font-family;
         height: 12px;
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba($black-color, 0.6);
         font-weight: 400;
       }
     }
 
-    .translation {
+    .tool-bar__translation {
       width: 82px;
-      padding: 4px 12px;
-      border: 1px solid rgba(0, 0, 0, 0.38);
+      border: 1px solid rgba($black-color, 0.38);
       border-radius: 4px;
-      color: rgba(0, 0, 0, 0.6);
 
-      .language {
+      .tool-bar__translation-language {
         margin: 0;
         font-weight: 400;
-        font-size: 14px;
         letter-spacing: 1.42px;
         font-family: $font-family;
-      }
-
-      .dropdown {
-        font-size: 24px;
-        width: 24px;
-        height: 24px;
       }
     }
   }

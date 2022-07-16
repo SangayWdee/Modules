@@ -23,7 +23,7 @@
 
 //colors
 @mixin try-colors( ) {
-  $colors: (hint-color, sh-hint, white-color, light-black, yellow-color, light-color, primary-color, l-blue);
+  $colors: (hint-color, sh-hint, white-color, light-black, yellow-color, light-color, primary-color, l-blue, l-grey, smoke-bg);
   $assign-colors: (
     'hint-color': $black-color-6,
     'sh-hint': $black-color-38,
@@ -33,6 +33,8 @@
     'light-color': $light-background,
     'primary-color': $primary,
     'l-blue': $light-blue,
+    'l-grey': $light-grey,
+    'smoke-bg': $white-smoke,
   );
 
   @each $color in $colors {
@@ -61,7 +63,7 @@
     .mb-#{$margin} {
       margin-bottom: #{$margin}px !important;
     }
-    ml-#{$margin} {
+    .ml-#{$margin} {
       margin-left: #{$margin}px !important;
     }
   }
@@ -72,9 +74,6 @@
   @each $padding in $paddings {
     .p-#{$padding} {
       padding: #{$padding}px !important;
-    }
-    .p-s-#{$padding} {
-      padding: #{$padding}px #{$padding}px !important;
     }
     .pl-#{$padding} {
       padding-left: #{$padding}px !important;

@@ -1,12 +1,10 @@
-<div fxLayout="row" class="wrapper">
-  <app-side-nav class="one"></app-side-nav>
-  <div class="right-top ml-308">
-    <app-tool-bar class="two"></app-tool-bar>
-    <app-add-modules class="add-modules"></app-add-modules>
-    <div class="rout-component pb-20">
-<!--      <app-module-cards></app-module-cards>-->
+<div fxLayout="row" class="wrapper bg-smoke-bg">
+  <app-side-nav fxHide.lt-md class="wrapper__side-nav"></app-side-nav>
+  <div fxLayout.xs="column" class="wrapper__right-content bg-smoke-bg" ngClass.gt-sm="ml-308">
+    <app-tool-bar></app-tool-bar>
+    <app-add-modules></app-add-modules>
+    <div class="pb-20">
       <router-outlet></router-outlet>
     </div>
   </div>
-
 </div>

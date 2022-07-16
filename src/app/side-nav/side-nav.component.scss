@@ -2,56 +2,43 @@
 @import "../../assets/styles/mixin";
 
 .nav {
-  //position: fixed;
   height: 100%;
-  //width: 20%;
-  background: $primary;
   font-family: $font-family;
 
-  .logo-container {
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  .nav__container{
+    background: $primary;
+    height: 100vh;
+  }
 
-    .logo {
+  .nav__logo-container {
+    box-shadow: inset 0px -1px 0px rgba($black-color, 0.16);
+
+    .nav__logo {
       width: 39%;
     }
 
-    .menu-icon {
+    .nav__menu-icon {
       @include icon-style();
-      color: #DADADA;
     }
   }
 
-  .side-items {
-    color: #FFFFFF;
+  .nav__side-items {
     height: 100%;
-
-    .item-list {
-      //padding: 32px 24px;
-    }
-    .modules {
-      cursor: pointer;
-    }
   }
 
   .footer {
-    //position: fixed;
-    //bottom: 0;
-    color: #FFFFFF;
     font-family: $font-family;
   }
 
-  .copyright-text {
+  .footer__copyright-text {
     font-weight: 400;
-    font-size: 12px;
     letter-spacing: 0.4px;
   }
 
-  .developer-description {
-    font-size: 10px;
+  .footer__developer-description {
     letter-spacing: 0.4px;
 
-    .underline {
+    .footer__text-underline {
       text-decoration: underline;
     }
   }

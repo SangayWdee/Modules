@@ -18,8 +18,16 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MediaObserver, MediaChange} from "@angular/flex-layout";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+
+export const createTranslateLoader = (http: HttpClient) => {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+};
 
 @NgModule({
+
   declarations: [
     AppComponent,
     SideNavComponent,
@@ -40,9 +48,18 @@ import {MediaObserver, MediaChange} from "@angular/flex-layout";
     MatPaginatorModule,
     MatMenuModule,
     MatSidenavModule,
-
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  private static createTranslateLoader: any;
+}

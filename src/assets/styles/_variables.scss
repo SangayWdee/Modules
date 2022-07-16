@@ -4,11 +4,14 @@ $white-color: #FFFFFF;
 $light-background: #F1F5F9;
 $black-color: #000000;
 $light-blue: #BADEF6;
+$light-grey: #DADADA;
+$white-smoke: rgb(245,245,245);
 $yellow: #6BB700;
 $black-color-6: rgba($black-color, 0.6);
 $black-color-38: rgba($black-color, 0.38);
 $black-color-87: rgba($black-color, 0.87);
-$colors: ($white-color, $black-color, $black-color-6, $black-color-38, $black-color-87, $yellow, $primary, $light-blue);
+$colors: ($white-color, $black-color, $black-color-6, $black-color-38, $black-color-87,
+          $yellow, $primary, $light-blue, $light-grey, $white-smoke);
 $font-size: (2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 26, 28, 30);
 $margins: (0, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 30, 100, 308);
-$paddings: (2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 32, 44, 312);
+$paddings: (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 30, 32, 44, 48, 78, 128, 100, 312);
