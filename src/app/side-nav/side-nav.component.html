@@ -1,34 +1,33 @@
-<mat-sidenav-container class="nav">
-  <mat-sidenav #sidenav class="nav__container" fxLayout="column">
-    <div fxLayout="row" fxLayoutAlign="space-between center" class="nav__logo-container p-10 hand-cursor">
-      <img routerLink="Home" class="nav__logo" src="/assets/images/logo.png" alt="logo" />
-      <mat-icon class="nav__menu-icon color--light-grey">menu</mat-icon>
-    </div>
-    <div fxLayout="column" fxLayoutAlign="space-between" class="nav__side-items color--white-color">
-      <div fxLayout="column" fxLayoutGap="" class="item__list">
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="time-table mt-20 py-8 pl-24">
-          <mat-icon class="table-icon item-list-icon font-size-20">web</mat-icon>
-          <span class="hand-cursor">Time Table</span>
-        </div>
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="projects py-8 pl-24">
-          <mat-icon class="project-icon item-list-icon font-size-20">apps</mat-icon>
-          <span class="hand-cursor">Projects</span>
-        </div>
-        <div routerLink="Modules" routerLinkActive="bg--light-blue" fxLayout="row" fxLayoutAlign="start center"
-             fxLayoutGap="8px" class="modules py-8 pl-24">
-          <mat-icon class="item-list-icon font-size-20">widgets</mat-icon>
-          <span class="hand-cursor">Modules</span>
-        </div>
+<mat-sidenav-container fxShow.gt-md class="nav">
+    <mat-sidenav opened="true" mode="side" #sidenav  class="nav__container" fxLayout="column">
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="nav__logo-container p-10 hand-cursor">
+        <img routerLink="Home" class="nav__logo" src="/assets/images/logo.png" alt="logo" />
       </div>
-      <footer fxLayout="column" fxLayoutAlign="start bottom" fxLayoutGap="4px" class="footer color--white-color pl-16">
-        <p class="footer__copyright-text font-size-12">&copy; All Rights Reserved, Selise Bhutan</p>
-        <p class="footer__developer-description font-size-10">Technology and Design by <span class="footer__text-underline">Selise CPQ</span></p>
-      </footer>
-    </div>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <p>
-      <button mat-button (click)="sidenav.toggle()">Toggle</button>
-    </p>
+      <div fxLayout="column" fxLayoutAlign="space-between" class="nav__side-items color--white-color">
+        <div fxLayout="column" fxLayoutGap="" class="item__list">
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="time-table mt-20 py-8 pl-24">
+            <mat-icon class="table-icon item-list-icon font-size-20">web</mat-icon>
+            <span class="hand-cursor">Time Table</span>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="projects py-8 pl-24">
+            <mat-icon class="project-icon item-list-icon font-size-20">apps</mat-icon>
+            <span class="hand-cursor">Projects</span>
+          </div>
+          <div routerLink="Modules" routerLinkActive="bg--light-blue" fxLayout="row" fxLayoutAlign="start center"
+               fxLayoutGap="8px" class="modules py-8 pl-24">
+            <mat-icon class="item-list-icon font-size-20">widgets</mat-icon>
+            <span class="hand-cursor">Modules</span>
+          </div>
+        </div>
+        <footer fxLayout="column" fxLayoutAlign="start bottom" fxLayoutGap="4px" class="footer color--white-color pl-16">
+          <p class="footer__copyright-text font-size-12">&copy; All Rights Reserved, Selise Bhutan</p>
+          <p class="footer__developer-description font-size-10">Technology and Design by <span class="footer__text-underline">Selise CPQ</span></p>
+        </footer>
+      </div>
+    </mat-sidenav>
+
+  <mat-sidenav-content class="nav__toggle-btn pt-20">
+    <mat-icon fxShow.lt-md fxHide.gt-xs class="nav__menu-icon color--light-grey" (click)="sidenav.toggle()">menu</mat-icon>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
