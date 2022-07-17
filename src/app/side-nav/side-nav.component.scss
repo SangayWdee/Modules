@@ -5,22 +5,20 @@
 .nav {
   height: 100%;
 
-  .nav__container{
+  &__container{
     height: 100%;
-    //height: inherit;
-    font-family: $font-family;
     background: $primary;
     width: 306px;
   }
 
-  .nav__logo-container {
+  &__logo-container {
     box-shadow: inset 0px -1px 0px rgba($black-color, 0.16);
 
-    .nav__logo {
+    &__logo {
       width: 39%;
     }
 
-    .nav__menu-icon {
+    &__menu-icon {
       @include icon-style();
       z-index: 9999;
 
@@ -32,22 +30,18 @@
   }
 
   .footer {
-    font-family: $font-family;
-  }
 
-  .footer__copyright-text {
-    font-weight: 400;
-    letter-spacing: 0.4px;
-  }
-
-  .footer__developer-description {
-    letter-spacing: 0.4px;
-
-    .footer__text-underline {
-      text-decoration: underline;
+    &__copyright-text {
+      font-weight: 400;
+      letter-spacing: 0.4px;
     }
-  }
-  .mat-drawer-content {
-     background-color: $primary;
+
+    &__developer-description {
+      letter-spacing: 0.4px;
+
+      &__text-underline {
+        text-decoration: underline;
+      }
+    }
   }
 }

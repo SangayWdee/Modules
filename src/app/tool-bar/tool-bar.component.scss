@@ -8,9 +8,9 @@
   background-color: #FFFFFF;
   z-index: 200;
 
-  .tool-bar__container {
+  &__container {
 
-    .tool-ber__title {
+    &__title {
       margin: 0;
       font-weight: 400;
       letter-spacing: 0.15px;

@@ -8,6 +8,13 @@ import { MatTableDataSource } from "@angular/material/table";
   styleUrls: ['./modules-table.component.scss']
 })
 export class ModulesTableComponent implements AfterViewInit {
+  actions = [
+    {icons: 'edit', label: 'Edit Module'},
+    {icons: 'title', label: 'Rename Module'},
+    {icons: 'category', label: 'Change Category'},
+    {icons: 'content_copy', label: 'Duplicate Module'},
+    {icons: 'delete', label: 'Delete Module'}
+  ];
 
   constructor() { }
 

@@ -8,13 +8,13 @@
   width: 96%;
   font-family: $font-family;
   z-index: 1;
-  .add-module__crud {
+  &__crud {
 
-    .add-module__text {
+    &__text {
       font-weight: 400;
     }
 
-    .add-module__hint {
+    &__hint {
       font-weight: 400;
       letter-spacing: 0.15px;
     }

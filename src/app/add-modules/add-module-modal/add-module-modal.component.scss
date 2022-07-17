@@ -12,7 +12,7 @@
   font-family: $font-family;
   border-radius: 4px 4px 0px 0px;
 
-  .add-dialog__content-input {
+  &__content-input {
     border: none;
     outline: none;
   }

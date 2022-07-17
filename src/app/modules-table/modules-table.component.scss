@@ -11,21 +11,21 @@
     text-align: left;
     overflow-x: auto;
 
-    .module-table-list__header {
+    &__header {
       font-weight: 400;
       box-shadow: inset 0px -1px 0px rgba($black-color, 0.16);
     }
 
-    .module-table-list__row {
+    &__row {
       box-shadow: inset 0px -1px 0px rgba($black-color, 0.02);
       vertical-align: center;
     }
 
-    .module-table-list__img {
+    &__img {
       width: 50px;
     }
 
-    .module-table-list__status {
+    &__status {
       box-shadow: 0px 0px 4px rgba($black-color, 0.08);
       font-weight: 400;
     }

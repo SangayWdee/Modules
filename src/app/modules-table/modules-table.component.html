@@ -43,26 +43,30 @@
           <mat-icon class="font-size-24 color--black-38">more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>
-            <mat-icon class="color--black-6 font-size-20">edit</mat-icon>
-            <span class="color--black-6 font-size-14">Edit Module</span>
+          <button mat-menu-item *ngFor="let action of actions">
+            <mat-icon class="black-6 font-size-20">{{action.icons}}</mat-icon>
+            <span class="black-6 font-size-14">{{action.label}}</span>
           </button>
-          <button mat-menu-item>
-            <mat-icon class="color--black-6 font-size-20">title</mat-icon>
-            <span class="color--black-6 font-size-14">Rename Module</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon class="color--black-6 font-size-20">category</mat-icon>
-            <span class="color--black-6 font-size-14">Change Category</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon class="color--black-6 font-size-20">content_copy</mat-icon>
-            <span class="color--black-6 font-size-14">Duplicate Module</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon class="color--black-6 font-size-20">delete</mat-icon>
-            <span class="color--black-6 font-size-14">Delete Module</span>
-          </button>
+<!--          <button mat-menu-item>-->
+<!--            <mat-icon class="color&#45;&#45;black-6 font-size-20">edit</mat-icon>-->
+<!--            <span class="color&#45;&#45;black-6 font-size-14">Edit Module</span>-->
+<!--          </button>-->
+<!--          <button mat-menu-item>-->
+<!--            <mat-icon class="color&#45;&#45;black-6 font-size-20">title</mat-icon>-->
+<!--            <span class="color&#45;&#45;black-6 font-size-14">Rename Module</span>-->
+<!--          </button>-->
+<!--          <button mat-menu-item>-->
+<!--            <mat-icon class="color&#45;&#45;black-6 font-size-20">category</mat-icon>-->
+<!--            <span class="color&#45;&#45;black-6 font-size-14">Change Category</span>-->
+<!--          </button>-->
+<!--          <button mat-menu-item>-->
+<!--            <mat-icon class="color&#45;&#45;black-6 font-size-20">content_copy</mat-icon>-->
+<!--            <span class="color&#45;&#45;black-6 font-size-14">Duplicate Module</span>-->
+<!--          </button>-->
+<!--          <button mat-menu-item>-->
+<!--            <mat-icon class="color&#45;&#45;black-6 font-size-20">delete</mat-icon>-->
+<!--            <span class="color&#45;&#45;black-6 font-size-14">Delete Module</span>-->
+<!--          </button>-->
         </mat-menu>
       </td>
     </ng-container>
