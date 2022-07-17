@@ -23,26 +23,26 @@
 
 //colors
 @mixin try-colors( ) {
-  $colors: (hint-color, sh-hint, white-color, light-black, yellow-color, light-color, primary-color, l-blue, l-grey, smoke-bg);
+  $colors: (black-6, black-38, white-color, black-87, yellow-color, faint-blue, primary-color, light-blue, light-grey, white-smoke);
   $assign-colors: (
-    'hint-color': $black-color-6,
-    'sh-hint': $black-color-38,
+    'black-6': $black-color-6,
+    'black-38': $black-color-38,
     'white-color': $white-color,
-    'light-black': $black-color-87,
+    'black-87': $black-color-87,
     'yellow-color': $yellow,
-    'light-color': $light-background,
+    'faint-blue': $faint-blue,
     'primary-color': $primary,
-    'l-blue': $light-blue,
-    'l-grey': $light-grey,
-    'smoke-bg': $white-smoke,
+    'light-blue': $light-blue,
+    'light-grey': $light-grey,
+    'white-smoke': $white-smoke,
   );
 
   @each $color in $colors {
     $mapped-color: map-get($assign-colors, $color);
-    .text-#{$color} {
+    .color--#{$color} {
       color: $mapped-color;
     }
-    .bg-#{$color}{
+    .bg--#{$color}{
       background-color: $mapped-color;
     }
   }

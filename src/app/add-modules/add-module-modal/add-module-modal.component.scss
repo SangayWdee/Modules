@@ -1,5 +1,7 @@
 @import "/src/assets/styles/variables";
 @import "/src/assets/styles/mixin";
+@import "/src/assets/styles/common";
+
 
 ::ng-deep.mat-dialog-container {
   border-top: 4px solid $primary;
@@ -13,13 +15,5 @@
   .add-dialog__content-input {
     border: none;
     outline: none;
-  }
-
-  .add-dialog__close-btn {
-    border-radius: 4px;
-    border: 1px solid $primary;
-  }
-  .add-dialog__add-btn {
-    border-radius: 4px;
   }
 }

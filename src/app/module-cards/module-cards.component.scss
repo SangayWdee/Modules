@@ -1,10 +1,11 @@
 @import "../../assets/styles/variables";
 @import "../../assets/styles/mixin";
+@import "/src/assets/styles/common";
+
 
 .card-container {
   margin: 0 auto;
   width: 96%;
-  font-family: $font-family;
 
   .card-container__module {
     border-radius: 4px;

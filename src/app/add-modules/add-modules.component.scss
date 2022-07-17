@@ -1,5 +1,7 @@
 @import "../../assets/styles/variables";
 @import "../../assets/styles/mixin";
+@import "/src/assets/styles/common";
+
 
 .add-module {
   margin: 0 auto;
@@ -7,11 +9,6 @@
   font-family: $font-family;
   z-index: 1;
   .add-module__crud {
-    border-radius: 4px;
-
-    .add-module__text-container {
-      border-radius: 4px;
-    }
 
     .add-module__text {
       font-weight: 400;

@@ -1,39 +1,38 @@
 @import "../../assets/styles/variables";
+@import "/src/assets/styles/common";
 
 .module-table {
   margin: 0 auto;
   width: 96%;
-  box-shadow: none;
-  font-family: $font-family;
-  overflow-x: auto;
-}
-
-.table {
-  width: 100%;
-  text-align: left;
   overflow-x: auto;
 
+  .module-table-list {
+    width: 100%;
+    text-align: left;
+    overflow-x: auto;
 
-  .table__header {
-    font-weight: 400;
-    box-shadow: inset 0px -1px 0px rgba($black-color, 0.16);
-  }
-  .table__row {
-    box-shadow: inset 0px -1px 0px rgba($black-color, 0.02);
-    vertical-align: center;
-  }
-  .table__img {
-    width: 50px;
-  }
+    .module-table-list__header {
+      font-weight: 400;
+      box-shadow: inset 0px -1px 0px rgba($black-color, 0.16);
+    }
 
-  .table__status {
-    box-shadow: 0px 0px 4px rgba($black-color, 0.08);
-    border-radius: 4px;
-    font-weight: 400;
+    .module-table-list__row {
+      box-shadow: inset 0px -1px 0px rgba($black-color, 0.02);
+      vertical-align: center;
+    }
+
+    .module-table-list__img {
+      width: 50px;
+    }
+
+    .module-table-list__status {
+      box-shadow: 0px 0px 4px rgba($black-color, 0.08);
+      font-weight: 400;
+    }
   }
 }
 
-.paginator {
+.module-table-paginator {
   margin: 0 auto;
   width: 95.5%;
 }
