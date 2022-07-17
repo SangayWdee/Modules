@@ -1,7 +1,10 @@
 <div class="tool-bar bg--white-color font-size-12">
   <div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-md="column" fxLayoutGap.lt-md="4px"
        fxLayoutAlign.lt-md="space-between" class="tool-bar__container py-12 px-24">
-    <p class="tool-bar__title font-size-16">Modules</p>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <mat-icon class="nav__menu-icon hand-cursor mr-24" (click)="navOpen()">menu</mat-icon>
+      <p class="tool-bar__title font-size-16 mb-0">Modules</p>
+    </div>
     <div fxLayout="row" fxLayoutAlign="space-between" class="tool-bar__right-compo bg-white-color">
       <div fxLayout="row" class="tool-bar__user py-4 px-12">
         <img class="tool-bar__profile-pic mr-8" src="/assets/images/profile.png" alt="profile">
@@ -11,18 +14,11 @@
           <p class="tool-bar__user-role font-size-10">Admin</p>
         </div>
       </div>
-      <div fxLayout="row" fxLayoutAlign="space-evenly center" class="tool-bar__translation py-4 px-12 color--black-6 hand-cursor">
+      <div fxLayout="row" fxLayoutAlign="space-evenly center"
+           class="tool-bar__translation py-4 px-12 color--black-6 hand-cursor">
         <p class="tool-bar__translation-language font-size-14">EN</p>
         <mat-icon class="font-size-24">expand_more</mat-icon>
       </div>
-
-<!--      <label>-->
-<!--        <select #langSelect (change)="changeLang(langSelect.value)">-->
-<!--          <option *ngFor="let lang of translate.getLangs()" [value]="lang" clas="option"-->
-<!--                  [selected]="lang === translate.currentLang">{{ lang }}</option>-->
-<!--        </select>-->
-<!--      </label>-->
-
     </div>
   </div>
 </div>
