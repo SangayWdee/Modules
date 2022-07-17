@@ -1,21 +1,28 @@
-<div fxLayout="column" fxLayoutGap="24px" class="add-module-container">
-  <div fxLayout="row" fxLayoutAlign="space-between center" class="crud-on-module">
-    <div class="module-text-container">
-      <p class="module-text">Modules</p>
-      <p class="module-hint">Select a module to edit, view, duplicate, change category or delete.</p>
+<div fxLayout="column" fxLayoutGap="18px" class="add-module pt-20">
+
+  <div fxLayout="row" fxLayoutAlign="space-between center" fxLayout.xs="column"
+       class="add-module__crud bg--white-color p-14 btn-border-radius">
+    <div class="add-module__text-container">
+      <p class="add-module__text font-size-20 color--black-87">Modules</p>
+      <p class="add-module__hint font-size-12 my-0 color--black-6">Select a module to edit, view, duplicate, change
+        category or delete.</p>
     </div>
-    <div fxLayoutAlign="flex-end flex-end" class="add-module-btn">
-      <mat-icon class="add-icon">add</mat-icon>
-      <button class="add-btn" mat-button (click)="openDialog()">ADD MODULES</button>
-    </div>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="space-between center" class="search-module">
-    <mat-icon class="search-icon">search</mat-icon>
-    <input type="text" placeholder="Search Modules">
-    <div fxLayout="row" class="search-right-icons">
-      <mat-icon class="view-module">view_module</mat-icon>
-      <mat-icon class="menu">menu</mat-icon>
+    <div fxLayoutAlign="end end" class="add-module__btn-container color--white-color">
+      <mat-icon class="add-module__btn-icon hand-cursor" (click)="openDialog()">add</mat-icon>
+      <button mat-raised-button color="primary" class="add-module__btn font-size-12 py-0 pr-16 pl-48 btn-border-radius" mat-button
+              (click)="openDialog()">{{'BTN_ADD_MODULES' | translate | uppercase}}</button>
     </div>
   </div>
+
+  <div fxLayout="row" fxLayoutAlign="space-between center" class="add-module__search">
+    <mat-icon class="add-module__search-icon color--black-38">search</mat-icon>
+    <input mat-form-field fxFlex="92" fxFlex.lt-md="80" class="add-module__search-bar color--black-38 bg--white py-12 pr-12 pl-44" type="text"
+           placeholder="Search Modules" />
+    <div fxLayout="row" fxFlex="5.5" fxFlex.lt-md="10" fxFlex.xs="16" class="bg--white-color">
+      <mat-icon class="add-module__search-view color--black-6 p-4 hand-cursor">view_module</mat-icon>
+      <mat-icon class="add-module__search-menu color--black-6 p-4 hand-cursor">menu</mat-icon>
+    </div>
+  </div>
+
 </div>
 

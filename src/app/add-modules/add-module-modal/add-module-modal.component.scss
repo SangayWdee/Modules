@@ -1,0 +1,19 @@
+@import "/src/assets/styles/variables";
+@import "/src/assets/styles/mixin";
+@import "/src/assets/styles/common";
+
+
+::ng-deep.mat-dialog-container {
+  border-top: 4px solid $primary;
+}
+
+
+.add-dialog {
+  font-family: $font-family;
+  border-radius: 4px 4px 0px 0px;
+
+  &__content-input {
+    border: none;
+    outline: none;
+  }
+}

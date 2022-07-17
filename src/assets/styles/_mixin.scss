@@ -10,7 +10,7 @@
 @mixin font-size($font-size) {
   @each $size in $font-size {
     .font-size-#{$size}{
-      font-size: #{$size}px;
+      font-size: #{$size}px !important;
     }
     //icon-size
     .i-s-#{$size}{
@@ -22,13 +22,28 @@
 }
 
 //colors
-@mixin colors($colors) {
+@mixin try-colors( ) {
+  $colors: (black-6, black-38, white-color, black-87, yellow-color, faint-blue, primary-color, light-blue, light-grey, white-smoke);
+  $assign-colors: (
+    'black-6': $black-color-6,
+    'black-38': $black-color-38,
+    'white-color': $white-color,
+    'black-87': $black-color-87,
+    'yellow-color': $yellow,
+    'faint-blue': $faint-blue,
+    'primary-color': $primary,
+    'light-blue': $light-blue,
+    'light-grey': $light-grey,
+    'white-smoke': $white-smoke,
+  );
+
   @each $color in $colors {
-    .font-color-#{$color}{
-      color: #{$color};
+    $mapped-color: map-get($assign-colors, $color);
+    .color--#{$color} {
+      color: $mapped-color;
     }
-    .bg-#{$color}{
-      background-color: #{$color};
+    .bg--#{$color}{
+      background-color: $mapped-color;
     }
   }
 }
@@ -37,19 +52,19 @@
 @mixin margins($margins) {
   @each $margin in $margins {
     .m-#{$margin} {
-      margin: #{$margin}px;
+      margin: #{$margin}px !important;
     }
     .mt-#{$margin} {
-      margin-top: #{$margin}px;
+      margin-top: #{$margin}px !important;
     }
     .mr-#{$margin} {
-      margin-right: #{$margin}px;
+      margin-right: #{$margin}px !important;
     }
     .mb-#{$margin} {
-      margin-bottom: #{$margin}px;
+      margin-bottom: #{$margin}px !important;
     }
-    ml-#{$margin} {
-      margin-left: #{$margin}px;
+    .ml-#{$margin} {
+      margin-left: #{$margin}px !important;
     }
   }
 }
@@ -58,19 +73,27 @@
 @mixin padding($paddings) {
   @each $padding in $paddings {
     .p-#{$padding} {
-      padding: #{$padding}px;
+      padding: #{$padding}px !important;
     }
     .pl-#{$padding} {
-      padding-left: #{$padding}px;
+      padding-left: #{$padding}px !important;
     }
     .pr-#{$padding} {
-      padding-right: #{$padding}px;
+      padding-right: #{$padding}px !important;
     }
     .pt-#{$padding} {
-      padding-top: #{$padding}px;
+      padding-top: #{$padding}px !important;
     }
     .pb-#{$padding} {
-      padding-bottom: #{$padding}px;
+      padding-bottom: #{$padding}px !important;
+    }
+    .px-#{$padding} {
+      padding-left: #{$padding}px !important;
+      padding-right: #{$padding}px !important;
+    }
+    .py-#{$padding} {
+      padding-top: #{$padding}px !important;
+      padding-bottom: #{$padding}px !important;
     }
   }
 }

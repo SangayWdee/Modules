@@ -1,48 +1,72 @@
 @import "../../assets/styles/variables";
 @import "../../assets/styles/mixin";
+@import "/src/assets/styles/common";
 
-.add-module-container {
+
+.add-module {
   margin: 0 auto;
   width: 96%;
-  background-color: yellow;
   font-family: $font-family;
+  z-index: 1;
+  &__crud {
 
-  .crud-on-module {
-    width: 100%;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    padding: 24px;
-
-    .module-text {
+    &__text {
       font-weight: 400;
-      font-size: 26px;
-      color: rgba(0, 0, 0, 0.87);
     }
-    .module-hint {
+
+    &__hint {
       font-weight: 400;
-      font-size: 16px;
       letter-spacing: 0.15px;
-      color: rgba(0, 0, 0, 0.6);
     }
 
-    .module-text-container {
-      background-color: bisque;
-    }
-    .add-module-btn {
-      background-color: bisque;
-      height: 60px;
+    .add-module__btn-container {
+      height: 40px;
       position: relative;
 
-      .add-icon {
-        position: absolute;
+      @media only screen and(max-width: 600px) {
+        width: 100%;
+      }
 
+      .add-module__btn-icon {
+        position: absolute;
+        left: 14px;
+        top: 10px;
+        z-index: 100;
+        @include icon-style();
       }
-      .add-btn {
-        padding: 12px 16px 12px 48px;
+
+      .add-module__btn {
         font-weight: 400;
-        font-size: 14px;
         letter-spacing: 1.25px;
+
+        @media only screen and(max-width: 600px) {
+          width: 100%;
+        }
       }
+    }
+  }
+  .add-module__search {
+    position: relative;
+
+    .add-module__search-icon {
+      position: absolute;
+      left: 12px;
+    }
+
+    .add-module__search-bar {
+      outline: none;
+      border: none;
+    }
+
+    .add-module__search-view {
+      border: 0.5px solid rgba($black-color, 0.6);
+      box-shadow: inset 0px 0px 10px rgba($black-color, 0.25);
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    .add-module__search-menu {
+      border: 0.5px solid rgba($black-color, 0.6);
+      border-radius: 0px 4px 4px 0px;
     }
   }
 }

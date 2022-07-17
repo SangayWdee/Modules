@@ -1,5 +1,17 @@
-<h1 mat-dialog-title>Dialog with elements</h1>
-<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+<div class="add-dialog">
+  <p mat-dialog-title class="color--black-87">Add Module</p>
+  <p class="color--black-6">Lorem ipsum dolor sit amet.</p>
+  <div fxLayout="column" fxLayoutAlign="start" mat-dialog-actions class="add-dialog__content">
+    <p class="color--black-6">Module Name</p>
+    <input class="add-dialog__content-input p-16 color--black-87 bg--faint-blue" ngClass.xs="pr-100" ngClass.gt-xs="pr-312" type="text" placeholder="Lorem ipsum dolor sit amet." />
+<!--    <mat-form-field appearance="fill" ngClass.gt-xs="pr-312">-->
+<!--      <mat-label ngClass.xs="pr-100" ngClass.gt-xs="pr-312" class="p-8 color&#45;&#45;black-87 bg&#45;&#45;faint-blue">Lorem ipsum dolor sit amet.</mat-label>-->
+<!--      <input matInput class="add-dialog__content-input p-8 color&#45;&#45;black-87 bg&#45;&#45;faint-blue" ngClass.xs="pr-100" ngClass.gt-xs="pr-312">-->
+<!--    </mat-form-field>-->
+    <div fxLayout="row" fxLayoutAlign="end" class="mt-24">
+      <button mat-stroked-button mat-dialog-close color="primary" class="add-dialog__close-btn color--primary-color hand-cursor btn-border-radius">CLOSE</button>
+      <button mat-raised-button mat-dialog-close color="primary" class="add-dialog__add-btn color--white-color hand-cursor btn-border-radius">ADD</button>
+    </div>
+  </div>
 </div>
+
